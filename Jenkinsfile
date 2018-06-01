@@ -11,7 +11,10 @@ pipeline {
         stage('stage2') {
           steps {
             echo 'bishyoumadeittothenextstep'
-            error 'whoops'
+            timeout(time: 2, activity: true) {
+              echo 'bishwait'
+            }
+
           }
         }
       }
