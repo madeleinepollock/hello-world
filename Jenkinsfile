@@ -6,7 +6,6 @@ pipeline {
         stage('stage1') {
           steps {
             echo 'hahaha'
-            build(job: 'yoyoyo', propagate: true, quietPeriod: 1)
           }
         }
         stage('stage2') {
