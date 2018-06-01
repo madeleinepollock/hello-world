@@ -18,6 +18,7 @@ pipeline {
     stage('superstage') {
       steps {
         echo 'woah!!!!youmadeittosuperstage!!!:o'
+        sleep 4
       }
     }
   }
