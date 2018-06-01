@@ -15,5 +15,10 @@ pipeline {
         }
       }
     }
+    stage('superstage') {
+      steps {
+        echo 'woah!!!!youmadeittosuperstage!!!:o'
+      }
+    }
   }
 }
