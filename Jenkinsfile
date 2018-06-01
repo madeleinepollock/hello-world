@@ -11,6 +11,7 @@ pipeline {
         stage('stage2') {
           steps {
             echo 'bishyoumadeittothenextstep'
+            error 'whoops'
           }
         }
       }
